@@ -1,21 +1,21 @@
 var count = 0;
 
-// TODO: Add a comment describing the functionality of the following document.querySelector() methods:
+// TODO: Pull element from html, increase count by 1 with a click or decrease count by 1 until it hits 0.
 var incrementEl = document.querySelector('#increment');
 var decrementEl = document.querySelector('#decrement');
 var countEl = document.querySelector('#count');
 
-// TODO: Add a comment describing the functionality of the following code:
+// TODO: This is to set the function, setting counter
 function setCounterText() {
   countEl.textContent = count;
 }
-// TODO: Add a comment describing the functionality of the following event listener:
+// TODO: This is adding count by 1.
 incrementEl.addEventListener('click', function() {
   count++;
   setCounterText();
 });
 
-// TODO: Add a comment describing the functionality of the following event listener:
+// TODO: This is subtracting count by 1.
 decrementEl.addEventListener('click', function() {
   // Action will fire if count is greater than  0
   if (count > 0) {
